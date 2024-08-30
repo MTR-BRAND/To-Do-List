@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/business-to-do-list-flat-icon-modern-style-free-vector.jpg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>TO DO LIST</title>
+</head>
+<body class="flex flex-col gap-8 justify-center items-center h-[100vh] px-4">
+    <h1 class="text-4xl md:text-6xl">TO DO LIST</h1>
+    <div class="w-full max-w-[600px] bg-[#1B1A17] p-4 rounded-lg">
+        <!-- input section -->
+        <div class="flex flex-col gap-4 md:flex-row md:justify-between">
+            <div class="flex flex-col gap-3 md:w-[450px]">
+                <input type="text" id="input_title" placeholder="Title.." class="p-2 border-[#FF8303] border-[3px] rounded-md bg-[#242320] text-white outline-none">
+                <input type="text" id="input_about" placeholder="About.." class="p-2 border-[#FF8303] border-[3px] rounded-md bg-[#242320] text-white outline-none">
+            </div>
+            <div class="flex justify-center items-center">
+                <button id="add" class="w-[60px] h-[60px] md:w-[100px] md:h-[100px] border-[#FF8303] border-[3px] rounded-md flex justify-center items-center text-[#FF8303] text-4xl md:text-5xl">
+                    <i class="ri-add-fill"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- input section -->
+
+        <div id="no_tasks" class="flex flex-col justify-center items-center gap-1 mt-8">
+            <div class="w-16 h-1 bg-[#FF8303]"></div>
+            <h1 class="text-white font-bold text-2xl">No tasks</h1>
+            <div class="w-16 h-1 bg-[#FF8303]"></div>
+        </div>
+
+        <!-- output section -->
+         <div id="tasks_container" class="flex flex-col gap-3 mt-4  ">
+            <!-- Tasks will be dynamically added here -->
+        </div>
+        <!-- output section -->
+    </div>
+
+    <!-- edit section -->
+    <div id="opacity" class=""></div>
+    <div id="edit" class=" fixed  flex justify-center items-center z-20">
+        <div class="lg:w-[400px] max-w-[400px]  p-4 border-[#FF8303] border-[3px] rounded-md glass">
+            <h1 class="text-center text-5xl mb-6">Edit Now</h1>
+            <div class="flex flex-col gap-4">
+                <input type="text" placeholder="Title.." id="editTitle" class="p-2 border-[#FF8303] border-[3px] rounded-md bg-[#242320] text-white outline-none">
+                <input type="text" placeholder="About.." id="editAbout" class="p-2 border-[#FF8303] border-[3px] rounded-md bg-[#242320] text-white outline-none">
+                <button id="editButton2" class="p-2 border-[#FF8303] border-[3px] rounded-md bg-[#242320] text-[#FF8303] w-full">Edit</button>
+                <button id="close" class="self-end text-[#FF8303] text-3xl"><i class="ri-close-circle-line"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- edit section -->
+    
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    background-image: url(img/v856-kul-07a.jpg);
+}
+
+.container {
+    width: 600px;
+    background-color: #1B1A17;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #FF8303;
+}
+
+input {
+    background-color: #242320;
+    color: white;
+}
+
+#tasks_container {
+    display: none;
+}
+
+
+#tasks_container {
+    max-height: 400px; 
+    overflow-y: auto; 
+    overflow-x: hidden;
+    padding-right: 10px;
+}
+
+
+#tasks_container::-webkit-scrollbar {
+    width: 8px; 
+}
+
+#tasks_container::-webkit-scrollbar-thumb {
+    background-color: #FF8303; 
+    border-radius: 4px; 
+}
+
+#tasks_container::-webkit-scrollbar-track {
+    background-color: #1B1A17; 
+}
+
+
+#bar::-webkit-scrollbar {
+    width: 8px; 
+}
+
+#bar::-webkit-scrollbar-thumb {
+    background-color: #FF8303; 
+    border-radius: 4px; 
+}
+
+#bar::-webkit-scrollbar-track {
+    background-color: #1B1A17; 
+}
+
+
+.glass{
+    background: rgba( 255, 255, 255, 0.35 );
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
